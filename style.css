@@ -35,7 +35,6 @@ aside{
     }
 }
 aside .logo{
-    /* width: 150px;  */
     padding: 20px 0;
     position: relative;
     z-index: 10;
@@ -73,7 +72,6 @@ h1 {
 
 .survey-form .initial-text{
     font-size: 30px;
-    /* color: #2f2f2f; */
 }
 h1 i {
     padding-right: 10px;
@@ -169,7 +167,6 @@ ul li{
 .survey-form .buttons {
     padding: 20px;
     text-align: center;
-    /* border-top: 1px solid #eceff2; */
 }
 .btn {
     display: inline-block;
@@ -223,7 +220,6 @@ ul li{
 }
 .survey-form label, .survey-form p {
     font-size: 22px;
-    /* font-weight: 600; */
     color: #2f2f2f;
 }
 .survey-form .field i {
@@ -301,13 +297,6 @@ ul li{
     color: #5f5f5f;
     z-index: 10;
 }
-/* @media (max-width: 576px) {
-    .survey-form .rating input[type="radio"]:checked + label,
-    .survey-form .rating input[type="radio"]:not(:checked) + label{
-        width: 27px;
-        height: 27px;
-    }
-} */
 .survey-form .rating.icons input[type="radio"]:checked + label,
 .survey-form .rating.icons input[type="radio"]:not(:checked) + label{
     position: relative;
@@ -344,14 +333,13 @@ ul li{
     appearance: none;
     width: 40px; /* Set a specific slider handle width */
     height: 70px; /* Slider handle height */
-    /* border-radius: 100%; */
-    /* background: #c60046; Green background */
     cursor: pointer; /* Cursor on hover */
     background-image: url(./img/Componente\ 1\ –\ 1.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     margin-left: -2px;
     margin-bottom: 30px;
+    box-shadow: none;
 }
 .rating.range .rage-numbers{
     display: flex;
@@ -398,13 +386,6 @@ ul li{
     background: #fff;
     z-index: -1;
 }
-/* @media (max-width: 576px) {
-    .survey-form .rating input[type="radio"]:checked + label:before,
-    .survey-form .rating input[type="radio"]:not(:checked) + label:before {
-        width: 25px;
-        height: 25px;
-    }
-} */
 .survey-form .rating input[type="radio"]:checked + label:after,
 .survey-form .rating input[type="radio"]:not(:checked) + label:after {
     content: "";
@@ -431,13 +412,6 @@ ul li{
     border: 1.5px solid #c60046;
     z-index: -1;
 }
-/* @media (max-width: 576px) {
-    .survey-form .rating input[type="radio"]:checked + label:after,
-    .survey-form .rating input[type="radio"]:not(:checked) + label:after {
-        width: 25px;
-        height: 25px;
-    }
-} */
 .survey-form .rating input[type="radio"]:not(:checked) + label:after {
     opacity: 0;
 }
@@ -457,18 +431,14 @@ ul li{
 .survey-form .group {
     display: flex;
     flex-wrap: wrap;
-    /* flex-flow: column; */
     justify-content: space-between;
     padding-bottom: 15px;
     margin: 5px;
 }
 .survey-form .group label {
-   
     display: flex;
     font-size: 16px;
     height: 25px;
-    /* align-items: center; */
-    /* padding-bottom: 5px; */
 }
 .survey-form .group .group-label,
 .survey-form .group .group-label-2{
@@ -481,13 +451,15 @@ ul li{
 .survey-form .group .group-label span,
 .survey-form .group .group-label-2 span{
     text-align: center;
-    margin: 0 auto;
-    /* cursor: pointer; */
+    width: 100%;
 }
+
 .survey-form .group .group-label span:hover,
 .survey-form .group .group-label-2 span:hover{
     cursor: pointer;
+    color: #c60046;
 }
+
 @media (max-width: 576px) {
     .survey-form .group label {
         font-size: 14px;
@@ -594,24 +566,19 @@ ul li{
     -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
-    /* Not removed via appearance */
     margin: -8px;
     border: 0;
 }
-.group-label:hover,
 .survey-form .group .group-label.selected,
-.group-label-2:hover,
 .survey-form .group .group-label-2.selected{
     background-color: #C6004622;
     border: 1.5px solid #c60046;
+}
+.survey-form .group .group-label.selected span,
+.survey-form .group .group-label-2.selected span{
     color: #c60046;
 }
-.group-label:hover span,
-.group-label.selected span,
-.group-label-2:hover span,
-.group-label-2.selected span{
-    color: #c60046;
-}
+
 .survey-form .group .group-label input[type="checkbox"]:hover,
 .survey-form .group .group-label.selected input[type="checkbox"],
 .survey-form .group .group-label-2 input[type="checkbox"]:hover,
@@ -627,7 +594,6 @@ ul li{
 
 .survey-form .group.gift input[type="radio"]:checked, 
 .survey-form .group.gift input[type="radio"]:not(:checked){
-
     position: absolute;
     left: -9999px;
 }
@@ -668,7 +634,6 @@ ul li{
 #punteggio > .selected-2,
 #consiglio-rating > .selected-3{
     color: #c60046 !important;
-    /* visibility: visible !important; */
     font-weight: bold;
 }
 
